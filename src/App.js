@@ -7,7 +7,7 @@ function App() {
   useEffect(()=>{
     const getName=async ()=>{
       try {
-        const resp=await axios.get('http://localhost:4000/name');
+        const resp=await axios.get('http://13.233.193.253:3000/name');
         if(resp.data){
           setName(resp.data?.name);
         }
